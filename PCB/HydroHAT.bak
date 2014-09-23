@@ -75,7 +75,7 @@ F 7 "http://www.digikey.com/short/77d1fr" H 9350 5050 60  0001 C CNN "Distrib Li
 	1    0    0    -1  
 $EndComp
 Text Notes 9200 6200 0    60   ~ 12
-To RPi\n
+To RPi\n 3.3V\n\n
 Text GLabel 6350 4750 2    60   Input ~ 0
 RXD
 Text GLabel 6350 4850 2    60   Input ~ 0
@@ -151,9 +151,13 @@ L RESONATOR_C RES?
 U 1 1 5420AE48
 P 4000 2650
 F 0 "RES?" H 4000 3000 60  0000 C CNN
-F 1 "RESONATOR_C" H 4000 2300 60  0000 C CNN
+F 1 "20MHz" H 4000 2300 60  0000 C CNN
 F 2 "" H 4000 3050 60  0000 C CNN
-F 3 "" H 4000 3050 60  0000 C CNN
+F 3 "http://www.murata.com/~/media/webrenewal/support/library/catalog/products/timingdevice/ceralock/p16e.ashx" H 4000 3050 60  0001 C CNN
+F 4 "Murata Electronics North America" H 4000 2650 60  0001 C CNN "MFG Name"
+F 5 "CSTLS20M0X53-B0" H 4000 2650 60  0001 C CNN "MFG Part Num"
+F 6 "490-1215-ND" H 4000 2650 60  0001 C CNN "Distrib PN"
+F 7 "490-1215-ND" H 4000 2650 60  0001 C CNN "Distrib Link"
 	1    4000 2650
 	1    0    0    -1  
 $EndComp
@@ -191,27 +195,16 @@ Text GLabel 6900 5150 0    60   Input ~ 0
 GND
 Text Notes 6900 5300 0    60   ~ 0
 Aux Serial Port
-Text Notes 6750 1750 0    60   ~ 0
-GPIO Port
-$Comp
-L CONN_4 P2
-U 1 1 5420C6D0
-P 7250 3900
-F 0 "P2" V 7200 3900 50  0000 C CNN
-F 1 "CONN_4" V 7300 3900 50  0000 C CNN
-F 2 "" H 7250 3900 60  0000 C CNN
-F 3 "" H 7250 3900 60  0000 C CNN
-	1    7250 3900
-	1    0    0    -1  
-$EndComp
+Text Notes 6650 1750 0    60   ~ 0
+   5V\nGPIO Port
 Text Notes 6950 3650 0    60   ~ 0
 I2C Port
 Text GLabel 6350 3450 2    60   Input ~ 0
-MOSI
+MOSI50
 Text GLabel 6350 3550 2    60   Input ~ 0
-MISO
+MISO50
 Text GLabel 6350 3650 2    60   Input ~ 0
-SCK
+SCK50
 $Comp
 L C C3
 U 1 1 5420C734
@@ -241,25 +234,14 @@ Text GLabel 9750 4100 2    60   Input ~ 0
 Vcc
 Text GLabel 8950 4400 0    60   Input ~ 0
 GPIO4
-$Comp
-L CONN_4 P3
-U 1 1 5420C88A
-P 7950 4250
-F 0 "P3" V 7900 4250 50  0000 C CNN
-F 1 "CONN_4" V 8000 4250 50  0000 C CNN
-F 2 "" H 7950 4250 60  0000 C CNN
-F 3 "" H 7950 4250 60  0000 C CNN
-	1    7950 4250
-	-1   0    0    1   
-$EndComp
 Text Notes 7850 4000 0    60   ~ 0
 RPi I2C Port\n
 Text GLabel 8950 5000 0    60   Input ~ 0
-MOSI
+MOSI33
 Text GLabel 8950 5100 0    60   Input ~ 0
-MISO
+MISO33
 Text GLabel 8950 5200 0    60   Input ~ 0
-SCK
+SCK33
 Text GLabel 9750 4400 2    60   Input ~ 0
 STX
 Text GLabel 9750 4500 2    60   Input ~ 0
@@ -332,8 +314,6 @@ Wire Wire Line
 Wire Wire Line
 	6900 5050 6350 5050
 Wire Wire Line
-	6900 3850 6350 3850
-Wire Wire Line
 	6350 3950 6900 3950
 Wire Wire Line
 	5150 1550 5150 1750
@@ -369,7 +349,6 @@ NoConn ~ 8950 4600
 NoConn ~ 8950 4700
 NoConn ~ 8950 4800
 NoConn ~ 8950 4100
-NoConn ~ 8950 4900
 NoConn ~ 8950 5300
 NoConn ~ 8950 5500
 NoConn ~ 8950 5600
@@ -384,8 +363,6 @@ NoConn ~ 9750 5700
 NoConn ~ 9750 5600
 NoConn ~ 9750 4700
 NoConn ~ 9750 5000
-Wire Wire Line
-	8950 4200 8300 4200
 Wire Wire Line
 	8300 4300 8950 4300
 Wire Wire Line
@@ -449,4 +426,60 @@ Text GLabel 7250 1950 2    60   Input ~ 0
 Vcc
 Text GLabel 7250 2850 2    60   Input ~ 0
 GND
+Wire Notes Line
+	9200 6200 9500 6200
+Wire Notes Line
+	9500 6200 9500 6300
+Wire Notes Line
+	9500 6300 9200 6300
+Wire Notes Line
+	9200 6300 9200 6200
+Wire Notes Line
+	6750 1650 6750 1750
+Wire Notes Line
+	6750 1750 6950 1750
+Wire Notes Line
+	6950 1750 6950 1650
+Wire Notes Line
+	6950 1650 6750 1650
+$Comp
+L CONN_3 P2
+U 1 1 5420F12C
+P 7250 3850
+F 0 "P2" V 7200 3850 50  0000 C CNN
+F 1 "CONN_3" V 7300 3850 40  0000 C CNN
+F 2 "" H 7250 3850 60  0000 C CNN
+F 3 "" H 7250 3850 60  0000 C CNN
+	1    7250 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_3 P3
+U 1 1 5420F13B
+P 7950 4200
+F 0 "P3" V 7900 4200 50  0000 C CNN
+F 1 "CONN_3" V 8000 4200 40  0000 C CNN
+F 2 "" H 7950 4200 60  0000 C CNN
+F 3 "" H 7950 4200 60  0000 C CNN
+	1    7950 4200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8950 4200 8600 4200
+Wire Wire Line
+	8600 4200 8600 4100
+Wire Wire Line
+	8600 4100 8300 4100
+Text GLabel 8300 4200 2    60   Input ~ 0
+GND
+Text GLabel 6900 3850 0    60   Input ~ 0
+GND
+Wire Wire Line
+	6350 3850 6600 3850
+Wire Wire Line
+	6600 3850 6600 3750
+Wire Wire Line
+	6600 3750 6900 3750
+Text GLabel 8950 4900 0    60   Input ~ 0
+Vdd
 $EndSCHEMATC
