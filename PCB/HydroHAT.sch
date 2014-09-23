@@ -169,8 +169,6 @@ Text GLabel 5150 5750 3    60   Input ~ 0
 GND
 Text GLabel 5350 5750 3    60   Input ~ 0
 GND
-NoConn ~ 5350 1750
-NoConn ~ 4350 3250
 NoConn ~ 6350 4150
 NoConn ~ 6350 4050
 NoConn ~ 6350 3350
@@ -481,5 +479,78 @@ Wire Wire Line
 Wire Wire Line
 	6600 3750 6900 3750
 Text GLabel 8950 4900 0    60   Input ~ 0
+Vdd
+Wire Wire Line
+	5150 1750 5350 1750
+NoConn ~ 4350 3250
+$Comp
+L SN74LVC1T45 U1
+U 1 1 54219896
+P 1800 2150
+F 0 "U1" H 1800 1950 60  0000 C CNN
+F 1 "SN74LVC1T45" H 1800 2350 60  0000 C CNN
+F 2 "" H 1800 2150 60  0000 C CNN
+F 3 "" H 1800 2150 60  0000 C CNN
+	1    1800 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L SN74LVC1T45 U2
+U 1 1 542198A3
+P 1800 2700
+F 0 "U2" H 1800 2500 60  0000 C CNN
+F 1 "SN74LVC1T45" H 1800 2900 60  0000 C CNN
+F 2 "" H 1800 2700 60  0000 C CNN
+F 3 "" H 1800 2700 60  0000 C CNN
+	1    1800 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L SN74LVC1T45 U3
+U 1 1 542198A9
+P 1800 3250
+F 0 "U3" H 1800 3050 60  0000 C CNN
+F 1 "SN74LVC1T45" H 1800 3450 60  0000 C CNN
+F 2 "" H 1800 3250 60  0000 C CNN
+F 3 "" H 1800 3250 60  0000 C CNN
+	1    1800 3250
+	1    0    0    -1  
+$EndComp
+Text Notes 1400 1800 0    60   ~ 0
+SPI Level Shifters
+Text GLabel 2100 2050 2    60   Input ~ 0
+MOSI33
+Text GLabel 2100 2150 2    60   Input ~ 0
+MOSI50
+Text GLabel 2100 2600 2    60   Input ~ 0
+MISO33
+Text GLabel 2100 2700 2    60   Input ~ 0
+MISO50
+Text GLabel 2100 3150 2    60   Input ~ 0
+SCK33
+Text GLabel 2100 3250 2    60   Input ~ 0
+SCK50
+Text GLabel 2100 2250 2    60   Input ~ 0
+Vdd
+NoConn ~ 2100 2800
+Text GLabel 1500 2050 0    60   Input ~ 0
+Vdd
+Text GLabel 1500 2600 0    60   Input ~ 0
+Vdd
+Text GLabel 1500 3150 0    60   Input ~ 0
+Vdd
+Text GLabel 1500 2150 0    60   Input ~ 0
+Vcc
+Text GLabel 1500 2700 0    60   Input ~ 0
+Vcc
+Text GLabel 1500 3250 0    60   Input ~ 0
+Vcc
+Text GLabel 1500 2250 0    60   Input ~ 0
+GND
+Text GLabel 1500 2800 0    60   Input ~ 0
+GND
+Text GLabel 1500 3350 0    60   Input ~ 0
+GND
+Text GLabel 2100 3350 2    60   Input ~ 0
 Vdd
 $EndSCHEMATC
