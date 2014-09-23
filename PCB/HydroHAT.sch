@@ -248,6 +248,167 @@ Text GLabel 9750 5400 2    60   Input ~ 0
 IDSC
 Text GLabel 8950 5400 0    60   Input ~ 0
 IDSD
+Text Notes 10100 4400 0    60   ~ 0
+RPi GPIO
+NoConn ~ 8950 4600
+NoConn ~ 8950 4700
+NoConn ~ 8950 4800
+NoConn ~ 8950 4100
+NoConn ~ 8950 5300
+NoConn ~ 8950 5500
+NoConn ~ 8950 5600
+NoConn ~ 8950 5700
+NoConn ~ 8950 5800
+NoConn ~ 8950 5900
+NoConn ~ 8950 6000
+NoConn ~ 9750 6000
+NoConn ~ 9750 5900
+NoConn ~ 9750 5800
+NoConn ~ 9750 5700
+NoConn ~ 9750 5600
+NoConn ~ 9750 4700
+NoConn ~ 9750 5000
+$Comp
+L CONN_8 P5
+U 1 1 5420CE5E
+P 10400 4850
+F 0 "P5" V 10350 4850 60  0000 C CNN
+F 1 "CONN_8" V 10450 4850 60  0000 C CNN
+F 2 "" H 10400 4850 60  0000 C CNN
+F 3 "" H 10400 4850 60  0000 C CNN
+	1    10400 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_10X2 P4
+U 1 1 5420D2CD
+P 6850 2400
+F 0 "P4" H 6850 2950 60  0000 C CNN
+F 1 "CONN_10X2" V 6850 2300 50  0000 C CNN
+F 2 "" H 6850 2400 60  0000 C CNN
+F 3 "" H 6850 2400 60  0000 C CNN
+	1    6850 2400
+	1    0    0    -1  
+$EndComp
+Text GLabel 6450 2850 0    60   Input ~ 0
+GND
+Text GLabel 6450 1950 0    60   Input ~ 0
+Vcc
+Text GLabel 7250 1950 2    60   Input ~ 0
+Vcc
+Text GLabel 7250 2850 2    60   Input ~ 0
+GND
+$Comp
+L CONN_3 P2
+U 1 1 5420F12C
+P 7250 3850
+F 0 "P2" V 7200 3850 50  0000 C CNN
+F 1 "CONN_3" V 7300 3850 40  0000 C CNN
+F 2 "" H 7250 3850 60  0000 C CNN
+F 3 "" H 7250 3850 60  0000 C CNN
+	1    7250 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_3 P3
+U 1 1 5420F13B
+P 7950 4200
+F 0 "P3" V 7900 4200 50  0000 C CNN
+F 1 "CONN_3" V 8000 4200 40  0000 C CNN
+F 2 "" H 7950 4200 60  0000 C CNN
+F 3 "" H 7950 4200 60  0000 C CNN
+	1    7950 4200
+	-1   0    0    1   
+$EndComp
+Text GLabel 8300 4200 2    60   Input ~ 0
+GND
+Text GLabel 6900 3850 0    60   Input ~ 0
+GND
+Text GLabel 8950 4900 0    60   Input ~ 0
+Vdd
+NoConn ~ 4350 3250
+$Comp
+L SN74LVC1T45 U1
+U 1 1 54219896
+P 1800 2150
+F 0 "U1" H 1800 1950 60  0000 C CNN
+F 1 "SN74LVC1T45" H 1800 2350 60  0000 C CNN
+F 2 "" H 1800 2150 60  0000 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/sn74lvc1t45.pdf" H 1800 2150 60  0001 C CNN
+F 4 "Texas Instruments" H 1800 2150 60  0001 C CNN "MFG Name"
+F 5 "SN74LVC1T45DBVR" H 1800 2150 60  0001 C CNN "MFG Part Num"
+F 6 "296-16843-1-ND" H 1800 2150 60  0001 C CNN "Distrib PN"
+F 7 "http://www.digikey.com/short/7t7fvf" H 1800 2150 60  0001 C CNN "Distrib Link"
+	1    1800 2150
+	1    0    0    -1  
+$EndComp
+Text Notes 1400 1800 0    60   ~ 0
+SPI Level Shifters
+Text GLabel 2100 2050 2    60   Input ~ 0
+MOSI33
+Text GLabel 2100 2150 2    60   Input ~ 0
+MOSI50
+Text GLabel 2100 2600 2    60   Input ~ 0
+MISO33
+Text GLabel 2100 2700 2    60   Input ~ 0
+MISO50
+Text GLabel 2100 3150 2    60   Input ~ 0
+SCK33
+Text GLabel 2100 3250 2    60   Input ~ 0
+SCK50
+Text GLabel 2100 2250 2    60   Input ~ 0
+Vdd
+NoConn ~ 2100 2800
+Text GLabel 1500 2050 0    60   Input ~ 0
+Vdd
+Text GLabel 1500 2600 0    60   Input ~ 0
+Vdd
+Text GLabel 1500 3150 0    60   Input ~ 0
+Vdd
+Text GLabel 1500 2150 0    60   Input ~ 0
+Vcc
+Text GLabel 1500 2700 0    60   Input ~ 0
+Vcc
+Text GLabel 1500 3250 0    60   Input ~ 0
+Vcc
+Text GLabel 1500 2250 0    60   Input ~ 0
+GND
+Text GLabel 1500 2800 0    60   Input ~ 0
+GND
+Text GLabel 1500 3350 0    60   Input ~ 0
+GND
+Text GLabel 2100 3350 2    60   Input ~ 0
+Vdd
+$Comp
+L SN74LVC1T45 U2
+U 1 1 5421B642
+P 1800 2700
+F 0 "U2" H 1800 2500 60  0000 C CNN
+F 1 "SN74LVC1T45" H 1800 2900 60  0000 C CNN
+F 2 "" H 1800 2700 60  0000 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/sn74lvc1t45.pdf" H 1800 2700 60  0001 C CNN
+F 4 "Texas Instruments" H 1800 2700 60  0001 C CNN "MFG Name"
+F 5 "SN74LVC1T45DBVR" H 1800 2700 60  0001 C CNN "MFG Part Num"
+F 6 "296-16843-1-ND" H 1800 2700 60  0001 C CNN "Distrib PN"
+F 7 "http://www.digikey.com/short/7t7fvf" H 1800 2700 60  0001 C CNN "Distrib Link"
+	1    1800 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L SN74LVC1T45 U3
+U 1 1 5421B64C
+P 1800 3250
+F 0 "U3" H 1800 3050 60  0000 C CNN
+F 1 "SN74LVC1T45" H 1800 3450 60  0000 C CNN
+F 2 "" H 1800 3250 60  0000 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/sn74lvc1t45.pdf" H 1800 3250 60  0001 C CNN
+F 4 "Texas Instruments" H 1800 3250 60  0001 C CNN "MFG Name"
+F 5 "SN74LVC1T45DBVR" H 1800 3250 60  0001 C CNN "MFG Part Num"
+F 6 "296-16843-1-ND" H 1800 3250 60  0001 C CNN "Distrib PN"
+F 7 "http://www.digikey.com/short/7t7fvf" H 1800 3250 60  0001 C CNN "Distrib Link"
+	1    1800 3250
+	1    0    0    -1  
+$EndComp
 Connection ~ 4200 2050
 Wire Wire Line
 	3800 1850 3800 2050
@@ -341,26 +502,6 @@ Wire Wire Line
 	9950 5000 10050 5000
 Wire Wire Line
 	9750 5300 10000 5300
-Text Notes 10100 4400 0    60   ~ 0
-RPi GPIO
-NoConn ~ 8950 4600
-NoConn ~ 8950 4700
-NoConn ~ 8950 4800
-NoConn ~ 8950 4100
-NoConn ~ 8950 5300
-NoConn ~ 8950 5500
-NoConn ~ 8950 5600
-NoConn ~ 8950 5700
-NoConn ~ 8950 5800
-NoConn ~ 8950 5900
-NoConn ~ 8950 6000
-NoConn ~ 9750 6000
-NoConn ~ 9750 5900
-NoConn ~ 9750 5800
-NoConn ~ 9750 5700
-NoConn ~ 9750 5600
-NoConn ~ 9750 4700
-NoConn ~ 9750 5000
 Wire Wire Line
 	8300 4300 8950 4300
 Wire Wire Line
@@ -373,17 +514,6 @@ Wire Wire Line
 	9750 5500 10050 5500
 Wire Wire Line
 	10050 5500 10050 5200
-$Comp
-L CONN_8 P5
-U 1 1 5420CE5E
-P 10400 4850
-F 0 "P5" V 10350 4850 60  0000 C CNN
-F 1 "CONN_8" V 10450 4850 60  0000 C CNN
-F 2 "" H 10400 4850 60  0000 C CNN
-F 3 "" H 10400 4850 60  0000 C CNN
-	1    10400 4850
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	10050 4500 10050 4200
 Wire Wire Line
@@ -405,25 +535,6 @@ Wire Wire Line
 	6350 2150 6450 2150
 Wire Wire Line
 	6450 2050 6350 2050
-$Comp
-L CONN_10X2 P4
-U 1 1 5420D2CD
-P 6850 2400
-F 0 "P4" H 6850 2950 60  0000 C CNN
-F 1 "CONN_10X2" V 6850 2300 50  0000 C CNN
-F 2 "" H 6850 2400 60  0000 C CNN
-F 3 "" H 6850 2400 60  0000 C CNN
-	1    6850 2400
-	1    0    0    -1  
-$EndComp
-Text GLabel 6450 2850 0    60   Input ~ 0
-GND
-Text GLabel 6450 1950 0    60   Input ~ 0
-Vcc
-Text GLabel 7250 1950 2    60   Input ~ 0
-Vcc
-Text GLabel 7250 2850 2    60   Input ~ 0
-GND
 Wire Notes Line
 	9200 6200 9500 6200
 Wire Notes Line
@@ -440,117 +551,44 @@ Wire Notes Line
 	6950 1750 6950 1650
 Wire Notes Line
 	6950 1650 6750 1650
-$Comp
-L CONN_3 P2
-U 1 1 5420F12C
-P 7250 3850
-F 0 "P2" V 7200 3850 50  0000 C CNN
-F 1 "CONN_3" V 7300 3850 40  0000 C CNN
-F 2 "" H 7250 3850 60  0000 C CNN
-F 3 "" H 7250 3850 60  0000 C CNN
-	1    7250 3850
-	1    0    0    -1  
-$EndComp
-$Comp
-L CONN_3 P3
-U 1 1 5420F13B
-P 7950 4200
-F 0 "P3" V 7900 4200 50  0000 C CNN
-F 1 "CONN_3" V 8000 4200 40  0000 C CNN
-F 2 "" H 7950 4200 60  0000 C CNN
-F 3 "" H 7950 4200 60  0000 C CNN
-	1    7950 4200
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	8950 4200 8600 4200
 Wire Wire Line
 	8600 4200 8600 4100
 Wire Wire Line
 	8600 4100 8300 4100
-Text GLabel 8300 4200 2    60   Input ~ 0
-GND
-Text GLabel 6900 3850 0    60   Input ~ 0
-GND
 Wire Wire Line
 	6350 3850 6600 3850
 Wire Wire Line
 	6600 3850 6600 3750
 Wire Wire Line
 	6600 3750 6900 3750
-Text GLabel 8950 4900 0    60   Input ~ 0
-Vdd
 Wire Wire Line
 	5150 1750 5350 1750
-NoConn ~ 4350 3250
 $Comp
-L SN74LVC1T45 U1
-U 1 1 54219896
-P 1800 2150
-F 0 "U1" H 1800 1950 60  0000 C CNN
-F 1 "SN74LVC1T45" H 1800 2350 60  0000 C CNN
-F 2 "" H 1800 2150 60  0000 C CNN
-F 3 "" H 1800 2150 60  0000 C CNN
-	1    1800 2150
+L FT232RL U?
+U 1 1 5421BA70
+P 2350 5100
+F 0 "U?" H 2350 6000 60  0000 C CNN
+F 1 "FT232RL" H 2750 4100 60  0000 L CNN
+F 2 "" H 2350 5100 60  0000 C CNN
+F 3 "http://www.ftdichip.com/Support/Documents/DataSheets/ICs/DS_FT232R.pdf" H 2350 5100 60  0001 C CNN
+F 4 "FTDI, Future Technology Devices International Ltd" H 2350 5100 60  0001 C CNN "MFG Name"
+F 5 "FT232RL-TUBE" H 2350 5100 60  0001 C CNN "MFG Part Num"
+F 6 "FT232RL-TUBE-ND" H 2350 5100 60  0001 C CNN "Distrib PN"
+F 7 "http://www.digikey.com/short/7t7wj0" H 2350 5100 60  0001 C CNN "Distrib Link"
+	1    2350 5100
 	1    0    0    -1  
 $EndComp
 $Comp
-L SN74LVC1T45 U2
-U 1 1 542198A3
-P 1800 2700
-F 0 "U2" H 1800 2500 60  0000 C CNN
-F 1 "SN74LVC1T45" H 1800 2900 60  0000 C CNN
-F 2 "" H 1800 2700 60  0000 C CNN
-F 3 "" H 1800 2700 60  0000 C CNN
-	1    1800 2700
+L USB J?
+U 1 1 5421BB71
+P 2350 7250
+F 0 "J?" H 2300 7650 60  0000 C CNN
+F 1 "USB" V 2100 7400 60  0000 C CNN
+F 2 "" H 2350 7250 60  0000 C CNN
+F 3 "" H 2350 7250 60  0000 C CNN
+	1    2350 7250
 	1    0    0    -1  
 $EndComp
-$Comp
-L SN74LVC1T45 U3
-U 1 1 542198A9
-P 1800 3250
-F 0 "U3" H 1800 3050 60  0000 C CNN
-F 1 "SN74LVC1T45" H 1800 3450 60  0000 C CNN
-F 2 "" H 1800 3250 60  0000 C CNN
-F 3 "" H 1800 3250 60  0000 C CNN
-	1    1800 3250
-	1    0    0    -1  
-$EndComp
-Text Notes 1400 1800 0    60   ~ 0
-SPI Level Shifters
-Text GLabel 2100 2050 2    60   Input ~ 0
-MOSI33
-Text GLabel 2100 2150 2    60   Input ~ 0
-MOSI50
-Text GLabel 2100 2600 2    60   Input ~ 0
-MISO33
-Text GLabel 2100 2700 2    60   Input ~ 0
-MISO50
-Text GLabel 2100 3150 2    60   Input ~ 0
-SCK33
-Text GLabel 2100 3250 2    60   Input ~ 0
-SCK50
-Text GLabel 2100 2250 2    60   Input ~ 0
-Vdd
-NoConn ~ 2100 2800
-Text GLabel 1500 2050 0    60   Input ~ 0
-Vdd
-Text GLabel 1500 2600 0    60   Input ~ 0
-Vdd
-Text GLabel 1500 3150 0    60   Input ~ 0
-Vdd
-Text GLabel 1500 2150 0    60   Input ~ 0
-Vcc
-Text GLabel 1500 2700 0    60   Input ~ 0
-Vcc
-Text GLabel 1500 3250 0    60   Input ~ 0
-Vcc
-Text GLabel 1500 2250 0    60   Input ~ 0
-GND
-Text GLabel 1500 2800 0    60   Input ~ 0
-GND
-Text GLabel 1500 3350 0    60   Input ~ 0
-GND
-Text GLabel 2100 3350 2    60   Input ~ 0
-Vdd
 $EndSCHEMATC
