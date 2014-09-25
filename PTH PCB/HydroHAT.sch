@@ -1,0 +1,701 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:HydroHAT-cache
+EELAYER 27 0
+EELAYER END
+$Descr USLetter 11000 8500
+encoding utf-8
+Sheet 1 1
+Title "HydroHAT Hydroponics Control Board"
+Date "25 sep 2014"
+Rev "1"
+Comp "Rancho High School"
+Comment1 "James Rowley"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ATMEGA1284P-P IC1
+U 1 1 541D94F8
+P 5350 4200
+F 0 "IC1" H 4500 6080 40  0000 L BNN
+F 1 "ATMEGA1284P-P" H 5750 2250 40  0000 L BNN
+F 2 "DIL40" H 5350 4200 30  0000 C CIN
+F 3 "http://www.atmel.com/Images/Atmel-8272-8-bit-AVR-microcontroller-ATmega164A_PA-324A_PA-644A_PA-1284_P_datasheet.pdf" H 5350 4200 60  0001 C CNN
+F 4 "Atmel" H 5350 4200 60  0001 C CNN "MFG Name"
+F 5 "ATMEGA1284P-PU" H 5350 4200 60  0001 C CNN "MFG Part Num"
+F 6 "ATMEGA1284P-PU-ND" H 5350 4200 60  0001 C CNN "Distrib PN"
+F 7 "http://www.digikey.com/short/77d19w" H 5350 4200 60  0001 C CNN "Distrib Link"
+	1    5350 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_20X2 P1
+U 1 1 541D9759
+P 9500 4750
+F 0 "P1" H 9500 5800 60  0000 C CNN
+F 1 "CONN_20X2_STACKING" V 9500 4750 50  0000 C CNN
+F 2 "" H 9500 4750 60  0000 C CNN
+F 3 "http://harwin.com/includes/pdfs/M20-610.pdf" H 9500 4750 60  0001 C CNN
+F 4 "Harwin Inc" H 9500 4750 60  0001 C CNN "MFG Name"
+F 5 "M20-6102045" H 9500 4750 60  0001 C CNN "MFG Part Num"
+F 6 "952-2219-ND" H 9500 4750 60  0001 C CNN "Distrib PN"
+F 7 "http://www.digikey.com/short/7tptq0" H 9500 4750 60  0001 C CNN "Distrib Link"
+	1    9500 4750
+	1    0    0    -1  
+$EndComp
+Text Notes 9350 5900 0    60   ~ 12
+To RPi\n 3.3V\n\n
+Text GLabel 6350 5200 2    60   Input ~ 0
+RXD
+Text GLabel 6350 5300 2    60   Input ~ 0
+TXD
+$Comp
+L C C1
+U 1 1 54203CE6
+P 3600 2500
+F 0 "C1" H 3600 2600 40  0000 L CNN
+F 1 "0.1uF" H 3606 2415 40  0000 L CNN
+F 2 "~" H 3638 2350 30  0000 C CNN
+F 3 "http://www.avx.com/docs/Catalogs/skycap-sr.pdf" H 3600 2500 60  0001 C CNN
+F 4 "AVX Corporation" H 3600 2500 60  0001 C CNN "MFG Name"
+F 5 "SR295E104MAR" H 3600 2500 60  0001 C CNN "MFG Part Num"
+F 6 "478-5741-ND" H 3600 2500 60  0001 C CNN "Distrib PN"
+F 7 "http://www.digikey.com/short/77v1wd" H 3600 2500 60  0001 C CNN "Distrib Link"
+	1    3600 2500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R1
+U 1 1 54203FAA
+P 4200 2150
+F 0 "R1" V 4280 2150 40  0000 C CNN
+F 1 "10K" V 4207 2151 40  0000 C CNN
+F 2 "~" V 4130 2150 30  0000 C CNN
+F 3 "http://www.seielect.com/catalog/SEI-CF_CFM.pdf" H 4200 2150 30  0001 C CNN
+F 4 "Stackpole Electronics Inc" H 4200 2150 60  0001 C CNN "MFG Name"
+F 5 "CF14JT10K0" H 4200 2150 60  0001 C CNN "MFG Part Num"
+F 6 "CF14JT10K0CT-ND" H 4200 2150 60  0001 C CNN "Distrib PN"
+F 7 "http://www.digikey.com/short/771c4h" H 4200 2150 60  0001 C CNN "Distrib Link"
+	1    4200 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C2
+U 1 1 5420403F
+P 3800 2100
+F 0 "C2" H 3800 2200 40  0000 L CNN
+F 1 "0.1uF" H 3806 2015 40  0000 L CNN
+F 2 "~" H 3838 1950 30  0000 C CNN
+F 3 "http://www.avx.com/docs/Catalogs/skycap-sr.pdf" H 3800 2100 60  0001 C CNN
+F 4 "AVX Corporation" H 3800 2100 60  0001 C CNN "MFG Name"
+F 5 "SR295E104MAR" H 3800 2100 60  0001 C CNN "MFG Part Num"
+F 6 "478-5741-ND" H 3800 2100 60  0001 C CNN "Distrib PN"
+F 7 "http://www.digikey.com/short/77v1wd" H 3800 2100 60  0001 C CNN "Distrib Link"
+	1    3800 2100
+	-1   0    0    1   
+$EndComp
+Text GLabel 3800 1900 1    60   Input ~ 0
+GPIO4
+Text GLabel 3400 2500 0    60   Input ~ 0
+DTR
+Text GLabel 4200 1900 1    60   Input ~ 0
+Vcc
+$Comp
+L SW_PUSH SW1
+U 1 1 542063C2
+P 4000 2200
+F 0 "SW1" H 4150 2310 50  0000 C CNN
+F 1 "SW_PUSH" H 4000 2120 50  0000 C CNN
+F 2 "~" H 4000 2200 60  0000 C CNN
+F 3 "http://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1825910&DocType=Customer+Drawing&DocLang=English" H 4000 2200 60  0001 C CNN
+F 4 "TE Connectivity" H 4000 2200 60  0001 C CNN "MFG Name"
+F 5 "1825910-6" H 4000 2200 60  0001 C CNN "MFG Part Num"
+F 6 "450-1650-ND" H 4000 2200 60  0001 C CNN "Distrib PN"
+F 7 "http://www.digikey.com/short/771zv7" H 4000 2200 60  0001 C CNN "Distrib Link"
+	1    4000 2200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L RESONATOR_C RES1
+U 1 1 5420AE48
+P 4000 3100
+F 0 "RES1" H 4000 3450 60  0000 C CNN
+F 1 "20MHz" H 4000 2750 60  0000 C CNN
+F 2 "" H 4000 3500 60  0000 C CNN
+F 3 "http://www.murata.com/~/media/webrenewal/support/library/catalog/products/timingdevice/ceralock/p16e.ashx" H 4000 3500 60  0001 C CNN
+F 4 "Murata Electronics North America" H 4000 3100 60  0001 C CNN "MFG Name"
+F 5 "CSTLS20M0X53-B0" H 4000 3100 60  0001 C CNN "MFG Part Num"
+F 6 "490-1215-ND" H 4000 3100 60  0001 C CNN "Distrib PN"
+F 7 "490-1215-ND" H 4000 3100 60  0001 C CNN "Distrib Link"
+	1    4000 3100
+	1    0    0    -1  
+$EndComp
+Text GLabel 3700 3100 0    60   Input ~ 0
+GND
+Text GLabel 4000 1900 1    60   Input ~ 0
+GND
+Text GLabel 5150 6200 3    60   Input ~ 0
+GND
+Text GLabel 5350 6200 3    60   Input ~ 0
+GND
+NoConn ~ 6350 4600
+NoConn ~ 6350 4500
+NoConn ~ 6350 3800
+NoConn ~ 6350 5900
+NoConn ~ 6350 5800
+NoConn ~ 6350 5700
+$Comp
+L CONN_4 P6
+U 1 1 5420C672
+P 7250 5450
+F 0 "P6" V 7200 5450 50  0000 C CNN
+F 1 "CONN_4" V 7300 5450 50  0000 C CNN
+F 2 "" H 7250 5450 60  0000 C CNN
+F 3 "http://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=640456&DocType=Customer+Drawing&DocLang=English" H 7250 5450 60  0001 C CNN
+F 4 "TE Connectivity" H 7250 5450 60  0001 C CNN "MFG Name"
+F 5 "640456-4" H 7250 5450 60  0001 C CNN "MFG Part Num"
+F 6 "A1922-ND" H 7250 5450 60  0001 C CNN "Distrib PN"
+F 7 "http://www.digikey.com/short/7t32pm" H 7250 5450 60  0001 C CNN "Distrib Link"
+	1    7250 5450
+	1    0    0    -1  
+$EndComp
+Text GLabel 6900 5300 0    60   Input ~ 0
+Vcc
+Text GLabel 6900 5600 0    60   Input ~ 0
+GND
+Text Notes 6900 5750 0    60   ~ 0
+Aux Serial Port
+Text Notes 6650 2200 0    60   ~ 0
+   5V\nGPIO Port
+Text Notes 6950 4100 0    60   ~ 0
+I2C Port
+Text GLabel 6350 3900 2    60   Input ~ 0
+MOSI50
+Text GLabel 6350 4000 2    60   Input ~ 0
+MISO50
+Text GLabel 6350 4100 2    60   Input ~ 0
+SCK50
+$Comp
+L C C3
+U 1 1 5420C734
+P 5350 2000
+F 0 "C3" H 5350 2100 40  0000 L CNN
+F 1 "0.1uF" H 5356 1915 40  0000 L CNN
+F 2 "~" H 5388 1850 30  0000 C CNN
+F 3 "http://www.avx.com/docs/Catalogs/skycap-sr.pdf" H 5350 2000 60  0001 C CNN
+F 4 "AVX Corporation" H 5350 2000 60  0001 C CNN "MFG Name"
+F 5 "SR295E104MAR" H 5350 2000 60  0001 C CNN "MFG Part Num"
+F 6 "478-5741-ND" H 5350 2000 60  0001 C CNN "Distrib PN"
+F 7 "http://www.digikey.com/short/77v1wd" H 5350 2000 60  0001 C CNN "Distrib Link"
+	1    5350 2000
+	0    1    1    0   
+$EndComp
+Text GLabel 5550 2000 2    60   Input ~ 0
+GND
+Text GLabel 5150 2000 1    60   Input ~ 0
+Vcc
+Text GLabel 9100 4200 0    60   Input ~ 0
+GND
+Text GLabel 9900 4000 2    60   Input ~ 0
+GND
+Text GLabel 9900 3900 2    60   Input ~ 0
+Vcc
+Text GLabel 9900 3800 2    60   Input ~ 0
+Vcc
+Text GLabel 9100 4100 0    60   Input ~ 0
+GPIO4
+Text Notes 8000 3700 0    60   ~ 0
+RPi I2C Port\n
+Text GLabel 9100 4700 0    60   Input ~ 0
+MOSI33
+Text GLabel 9100 4800 0    60   Input ~ 0
+MISO33
+Text GLabel 9100 4900 0    60   Input ~ 0
+SCK33
+Text GLabel 9900 4100 2    60   Input ~ 0
+STX
+Text GLabel 9900 4200 2    60   Input ~ 0
+SRX
+Text GLabel 9900 5100 2    60   Input ~ 0
+IDSC
+Text GLabel 9100 5100 0    60   Input ~ 0
+IDSD
+NoConn ~ 9100 4300
+NoConn ~ 9100 4400
+NoConn ~ 9100 4500
+NoConn ~ 9100 3800
+NoConn ~ 9100 5000
+NoConn ~ 9100 5200
+NoConn ~ 9100 5300
+NoConn ~ 9100 5400
+NoConn ~ 9100 5500
+NoConn ~ 9100 5600
+NoConn ~ 9100 5700
+NoConn ~ 9900 5700
+NoConn ~ 9900 5600
+NoConn ~ 9900 5500
+NoConn ~ 9900 5400
+NoConn ~ 9900 5300
+NoConn ~ 9900 4400
+NoConn ~ 9900 4700
+$Comp
+L CONN_10X2 P4
+U 1 1 5420D2CD
+P 6850 2850
+F 0 "P4" H 6850 3400 60  0000 C CNN
+F 1 "CONN_10X2" V 6850 2750 50  0000 C CNN
+F 2 "" H 6850 2850 60  0000 C CNN
+F 3 "http://portal.fciconnect.com/Comergent//fci/drawing/67996.pdf" H 6850 2850 60  0001 C CNN
+F 4 "FCI" H 6850 2850 60  0001 C CNN "MFG Name"
+F 5 "67996-420HLF" H 6850 2850 60  0001 C CNN "MFG Part Num"
+F 6 "609-3221-ND" H 6850 2850 60  0001 C CNN "Distrib PN"
+F 7 "http://www.digikey.com/short/7tjj84" H 6850 2850 60  0001 C CNN "Distrib Link"
+	1    6850 2850
+	1    0    0    -1  
+$EndComp
+Text GLabel 6450 3300 0    60   Input ~ 0
+GND
+Text GLabel 6450 2400 0    60   Input ~ 0
+Vcc
+Text GLabel 7250 2400 2    60   Input ~ 0
+Vcc
+Text GLabel 7250 3300 2    60   Input ~ 0
+GND
+$Comp
+L CONN_3 P2
+U 1 1 5420F12C
+P 7250 4300
+F 0 "P2" V 7200 4300 50  0000 C CNN
+F 1 "CONN_3" V 7300 4300 40  0000 C CNN
+F 2 "" H 7250 4300 60  0000 C CNN
+F 3 "http://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=640456&DocType=Customer+Drawing&DocLang=English" H 7250 4300 60  0001 C CNN
+F 4 "TE Connectivity" H 7250 4300 60  0001 C CNN "MFG Name"
+F 5 "640456-3" H 7250 4300 60  0001 C CNN "MFG Part Num"
+F 6 "A19470-ND" H 7250 4300 60  0001 C CNN "Distrib PN"
+F 7 "http://www.digikey.com/short/7t32b0" H 7250 4300 60  0001 C CNN "Distrib Link"
+	1    7250 4300
+	1    0    0    -1  
+$EndComp
+Text GLabel 8450 3900 2    60   Input ~ 0
+GND
+Text GLabel 6900 4300 0    60   Input ~ 0
+GND
+Text GLabel 9100 4600 0    60   Input ~ 0
+Vdd
+NoConn ~ 4350 3700
+$Comp
+L SN74LVC1T45 U1
+U 1 1 54219896
+P 1800 2100
+F 0 "U1" H 1800 1900 60  0000 C CNN
+F 1 "SN74LVC1T45" H 1800 2300 60  0000 C CNN
+F 2 "" H 1800 2100 60  0000 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/sn74lvc1t45.pdf" H 1800 2100 60  0001 C CNN
+F 4 "Texas Instruments" H 1800 2100 60  0001 C CNN "MFG Name"
+F 5 "SN74LVC1T45DBVR" H 1800 2100 60  0001 C CNN "MFG Part Num"
+F 6 "296-16843-1-ND" H 1800 2100 60  0001 C CNN "Distrib PN"
+F 7 "http://www.digikey.com/short/7t7fvf" H 1800 2100 60  0001 C CNN "Distrib Link"
+	1    1800 2100
+	1    0    0    -1  
+$EndComp
+Text Notes 1400 1750 0    60   ~ 0
+SPI Level Shifters
+Text GLabel 2100 2000 2    60   Input ~ 0
+MOSI33
+Text GLabel 2100 2100 2    60   Input ~ 0
+MOSI50
+Text GLabel 2100 2550 2    60   Input ~ 0
+MISO33
+Text GLabel 2100 2650 2    60   Input ~ 0
+MISO50
+Text GLabel 2100 3100 2    60   Input ~ 0
+SCK33
+Text GLabel 2100 3200 2    60   Input ~ 0
+SCK50
+Text GLabel 2100 2200 2    60   Input ~ 0
+Vdd
+NoConn ~ 2100 2750
+Text GLabel 1500 2000 0    60   Input ~ 0
+Vdd
+Text GLabel 1500 2550 0    60   Input ~ 0
+Vdd
+Text GLabel 1500 3100 0    60   Input ~ 0
+Vdd
+Text GLabel 1500 2100 0    60   Input ~ 0
+Vcc
+Text GLabel 1500 2650 0    60   Input ~ 0
+Vcc
+Text GLabel 1500 3200 0    60   Input ~ 0
+Vcc
+Text GLabel 1500 2200 0    60   Input ~ 0
+GND
+Text GLabel 1500 2750 0    60   Input ~ 0
+GND
+Text GLabel 1500 3300 0    60   Input ~ 0
+GND
+Text GLabel 2100 3300 2    60   Input ~ 0
+Vdd
+$Comp
+L SN74LVC1T45 U2
+U 1 1 5421B642
+P 1800 2650
+F 0 "U2" H 1800 2450 60  0000 C CNN
+F 1 "SN74LVC1T45" H 1800 2850 60  0000 C CNN
+F 2 "" H 1800 2650 60  0000 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/sn74lvc1t45.pdf" H 1800 2650 60  0001 C CNN
+F 4 "Texas Instruments" H 1800 2650 60  0001 C CNN "MFG Name"
+F 5 "SN74LVC1T45DBVR" H 1800 2650 60  0001 C CNN "MFG Part Num"
+F 6 "296-16843-1-ND" H 1800 2650 60  0001 C CNN "Distrib PN"
+F 7 "http://www.digikey.com/short/7t7fvf" H 1800 2650 60  0001 C CNN "Distrib Link"
+	1    1800 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L SN74LVC1T45 U3
+U 1 1 5421B64C
+P 1800 3200
+F 0 "U3" H 1800 3000 60  0000 C CNN
+F 1 "SN74LVC1T45" H 1800 3400 60  0000 C CNN
+F 2 "" H 1800 3200 60  0000 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/sn74lvc1t45.pdf" H 1800 3200 60  0001 C CNN
+F 4 "Texas Instruments" H 1800 3200 60  0001 C CNN "MFG Name"
+F 5 "SN74LVC1T45DBVR" H 1800 3200 60  0001 C CNN "MFG Part Num"
+F 6 "296-16843-1-ND" H 1800 3200 60  0001 C CNN "Distrib PN"
+F 7 "http://www.digikey.com/short/7t7fvf" H 1800 3200 60  0001 C CNN "Distrib Link"
+	1    1800 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L FT232RL IC2
+U 1 1 5421BA70
+P 2550 4700
+F 0 "IC2" H 2550 5600 60  0000 C CNN
+F 1 "FT232RL" H 2950 3700 60  0000 L CNN
+F 2 "" H 2550 4700 60  0000 C CNN
+F 3 "http://www.ftdichip.com/Support/Documents/DataSheets/ICs/DS_FT232R.pdf" H 2550 4700 60  0001 C CNN
+F 4 "FTDI, Future Technology Devices International Ltd" H 2550 4700 60  0001 C CNN "MFG Name"
+F 5 "FT232RL-TUBE" H 2550 4700 60  0001 C CNN "MFG Part Num"
+F 6 "FT232RL-TUBE-ND" H 2550 4700 60  0001 C CNN "Distrib PN"
+F 7 "http://www.digikey.com/short/7t7wj0" H 2550 4700 60  0001 C CNN "Distrib Link"
+	1    2550 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L USB J1
+U 1 1 5421BB71
+P 1250 4650
+F 0 "J1" H 1200 5050 60  0000 C CNN
+F 1 "USB-B" V 1000 4800 60  0000 C CNN
+F 2 "" H 1250 4650 60  0000 C CNN
+F 3 "http://harwin.com/includes/pdfs/M701-330442.pdf" H 1250 4650 60  0001 C CNN
+F 4 "Harwin Inc" H 1250 4650 60  0001 C CNN "MFG Name"
+F 5 "M701-330442" H 1250 4650 60  0001 C CNN "MFG Part Num"
+F 6 "952-1767-ND" H 1250 4650 60  0001 C CNN "Distrib PN"
+F 7 "http://www.digikey.com/short/7t3f2f" H 1250 4650 60  0001 C CNN "Distrib Link"
+	1    1250 4650
+	1    0    0    1   
+$EndComp
+Connection ~ 4200 2500
+Wire Wire Line
+	3800 2300 3800 2500
+Wire Wire Line
+	3800 2500 4350 2500
+Wire Wire Line
+	4200 2500 4200 2400
+Wire Wire Line
+	4200 2900 4350 2900
+Wire Wire Line
+	4350 3300 4200 3300
+Wire Wire Line
+	6350 3400 7450 3400
+Wire Wire Line
+	7450 3400 7450 3200
+Wire Wire Line
+	7450 3200 7250 3200
+Wire Wire Line
+	6350 3500 7500 3500
+Wire Wire Line
+	7500 3500 7500 3100
+Wire Wire Line
+	7500 3100 7250 3100
+Wire Wire Line
+	6350 3600 7550 3600
+Wire Wire Line
+	7550 3600 7550 3000
+Wire Wire Line
+	7550 3000 7250 3000
+Wire Wire Line
+	6350 3700 7600 3700
+Wire Wire Line
+	7600 3700 7600 2900
+Wire Wire Line
+	7600 2900 7250 2900
+Wire Wire Line
+	6350 4700 7650 4700
+Wire Wire Line
+	7650 4700 7650 2800
+Wire Wire Line
+	7650 2800 7250 2800
+Wire Wire Line
+	6350 4800 7700 4800
+Wire Wire Line
+	7700 4800 7700 2700
+Wire Wire Line
+	7700 2700 7250 2700
+Wire Wire Line
+	6350 4900 7750 4900
+Wire Wire Line
+	7750 4900 7750 2600
+Wire Wire Line
+	7750 2600 7250 2600
+Wire Wire Line
+	6350 5000 7800 5000
+Wire Wire Line
+	7800 5000 7800 2500
+Wire Wire Line
+	7800 2500 7250 2500
+Wire Wire Line
+	6350 5400 6900 5400
+Wire Wire Line
+	6900 5500 6350 5500
+Wire Wire Line
+	6350 4400 6900 4400
+Wire Wire Line
+	5150 2000 5150 2200
+Wire Wire Line
+	8450 4000 9100 4000
+Wire Wire Line
+	6350 3200 6450 3200
+Wire Wire Line
+	6450 3100 6350 3100
+Wire Wire Line
+	6350 3000 6450 3000
+Wire Wire Line
+	6450 2900 6350 2900
+Wire Wire Line
+	6350 2800 6450 2800
+Wire Wire Line
+	6450 2700 6350 2700
+Wire Wire Line
+	6350 2600 6450 2600
+Wire Wire Line
+	6450 2500 6350 2500
+Wire Notes Line
+	9350 5900 9650 5900
+Wire Notes Line
+	9650 5900 9650 6000
+Wire Notes Line
+	9650 6000 9350 6000
+Wire Notes Line
+	9350 6000 9350 5900
+Wire Notes Line
+	6750 2100 6750 2200
+Wire Notes Line
+	6750 2200 6950 2200
+Wire Notes Line
+	6950 2200 6950 2100
+Wire Notes Line
+	6950 2100 6750 2100
+Wire Wire Line
+	9100 3900 8750 3900
+Wire Wire Line
+	8750 3900 8750 3800
+Wire Wire Line
+	8750 3800 8450 3800
+Wire Wire Line
+	6350 4300 6600 4300
+Wire Wire Line
+	6600 4300 6600 4200
+Wire Wire Line
+	6600 4200 6900 4200
+Wire Wire Line
+	5150 2200 5350 2200
+Wire Wire Line
+	1600 4450 1600 4400
+Text GLabel 750  4200 1    60   Input ~ 0
+GND
+Wire Wire Line
+	750  4200 750  4300
+Wire Wire Line
+	750  4300 850  4300
+NoConn ~ 850  4450
+NoConn ~ 850  4200
+NoConn ~ 1600 4200
+Text GLabel 1600 3850 1    60   Input ~ 0
+Vcc
+Wire Wire Line
+	2250 5900 2250 6000
+Wire Wire Line
+	2250 6000 2850 6000
+Wire Wire Line
+	2850 6000 2850 5900
+Wire Wire Line
+	2700 5900 2700 6000
+Wire Wire Line
+	2700 6000 2400 6000
+Connection ~ 2400 6000
+Wire Wire Line
+	2400 6000 2400 5900
+Connection ~ 2700 6000
+Wire Wire Line
+	2550 5900 2550 6100
+Connection ~ 2550 6000
+Text GLabel 2550 6100 3    60   Input ~ 0
+GND
+Text GLabel 3450 4400 2    60   Input ~ 0
+DTR
+Text GLabel 3450 4000 2    60   Input ~ 0
+RXD
+Text GLabel 3450 4100 2    60   Input ~ 0
+TXD
+Text GLabel 6350 5600 2    60   Input ~ 0
+PEN
+Text GLabel 3450 5100 2    60   Input ~ 0
+PEN
+$Comp
+L C C4
+U 1 1 5422E16F
+P 1400 3950
+F 0 "C4" H 1400 4050 40  0000 L CNN
+F 1 "0.1uF" H 1406 3865 40  0000 L CNN
+F 2 "~" H 1438 3800 30  0000 C CNN
+F 3 "http://www.avx.com/docs/Catalogs/skycap-sr.pdf" H 1400 3950 60  0001 C CNN
+F 4 "AVX Corporation" H 1400 3950 60  0001 C CNN "MFG Name"
+F 5 "SR295E104MAR" H 1400 3950 60  0001 C CNN "MFG Part Num"
+F 6 "478-5741-ND" H 1400 3950 60  0001 C CNN "Distrib PN"
+F 7 "http://www.digikey.com/short/77v1wd" H 1400 3950 60  0001 C CNN "Distrib Link"
+	1    1400 3950
+	0    -1   -1   0   
+$EndComp
+Text GLabel 1200 3950 1    60   Input ~ 0
+GND
+Wire Wire Line
+	1600 3850 1600 4050
+Connection ~ 4000 2500
+Connection ~ 3800 2500
+Connection ~ 1600 3950
+Connection ~ 1600 4050
+NoConn ~ 1600 4700
+NoConn ~ 1600 4900
+NoConn ~ 1600 5000
+NoConn ~ 1600 5200
+NoConn ~ 3450 5200
+NoConn ~ 3450 5000
+NoConn ~ 3450 4900
+NoConn ~ 3450 4800
+NoConn ~ 3450 4700
+NoConn ~ 3450 4600
+NoConn ~ 3450 4500
+NoConn ~ 3450 4300
+NoConn ~ 3450 4200
+Connection ~ 5150 2200
+Connection ~ 5350 2200
+Connection ~ 5150 2000
+Connection ~ 1200 3950
+$Comp
+L CONN_3 P3
+U 1 1 5422E631
+P 8100 3900
+F 0 "P3" V 8050 3900 50  0000 C CNN
+F 1 "CONN_3" V 8150 3900 40  0000 C CNN
+F 2 "" H 8100 3900 60  0000 C CNN
+F 3 "http://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=640456&DocType=Customer+Drawing&DocLang=English" H 8100 3900 60  0001 C CNN
+F 4 "TE Connectivity" H 8100 3900 60  0001 C CNN "MFG Name"
+F 5 "640456-3" H 8100 3900 60  0001 C CNN "MFG Part Num"
+F 6 "A19470-ND" H 8100 3900 60  0001 C CNN "Distrib PN"
+F 7 "http://www.digikey.com/short/7t32b0" H 8100 3900 60  0001 C CNN "Distrib Link"
+	1    8100 3900
+	-1   0    0    1   
+$EndComp
+$Comp
+L CAT24C32 IC3
+U 1 1 542310FC
+P 9000 1900
+F 0 "IC3" H 9000 1650 60  0000 C CNN
+F 1 "CAT24C32" H 9000 2150 60  0000 C CNN
+F 2 "" H 9000 1900 60  0000 C CNN
+F 3 "http://www.onsemi.com/pub_link/Collateral/CAT24C32-D.PDF" H 9000 1900 60  0001 C CNN
+F 4 "ON Semiconductor" H 9000 1900 60  0001 C CNN "MFG Name"
+F 5 "CAT24C32LI-G" H 9000 1900 60  0001 C CNN "MFG Part Num"
+F 6 "CAT24C32LI-G-ND" H 9000 1900 60  0001 C CNN "Distrib PN"
+F 7 "http://www.digikey.com/short/7tj8v2" H 9000 1900 60  0001 C CNN "Distrib Link"
+	1    9000 1900
+	1    0    0    -1  
+$EndComp
+NoConn ~ 8700 1750
+NoConn ~ 8700 1850
+NoConn ~ 8700 1950
+NoConn ~ 9300 1850
+Text GLabel 9300 1750 2    60   Input ~ 0
+Vdd
+Text GLabel 8700 2050 0    60   Input ~ 0
+GND
+Text GLabel 9300 1950 2    60   Input ~ 0
+IDSC
+Text GLabel 9300 2050 2    60   Input ~ 0
+IDSD
+$Comp
+L CONN_5 P7
+U 1 1 542311A8
+P 9000 3100
+F 0 "P7" V 8950 3100 50  0000 C CNN
+F 1 "CONN_5" V 9050 3100 50  0000 C CNN
+F 2 "" H 9000 3100 60  0000 C CNN
+F 3 "http://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=640456&DocType=Customer+Drawing&DocLang=English" H 9000 3100 60  0001 C CNN
+F 4 "TE Connectivity" H 9000 3100 60  0001 C CNN "MFG Name"
+F 5 "640456-5" H 9000 3100 60  0001 C CNN "MFG Part Num"
+F 6 "A19471-ND" H 9000 3100 60  0001 C CNN "Distrib PN"
+F 7 "http://www.digikey.com/short/7tj8wn" H 9000 3100 60  0001 C CNN "Distrib Link"
+	1    9000 3100
+	0    1    1    0   
+$EndComp
+NoConn ~ 9200 2700
+Text GLabel 9100 2700 1    60   Input ~ 0
+GND
+Text GLabel 8800 2700 1    60   Input ~ 0
+Vcc
+Text GLabel 9000 2700 1    60   Input ~ 0
+STX
+Text GLabel 8900 2700 1    60   Input ~ 0
+SRX
+Text Notes 8450 3300 0    60   ~ 0
+4D Systems Connector
+NoConn ~ 9900 4300
+NoConn ~ 9900 4500
+NoConn ~ 9900 4600
+NoConn ~ 9900 4800
+NoConn ~ 9900 4900
+NoConn ~ 9900 5000
+NoConn ~ 9900 5200
+$EndSCHEMATC
