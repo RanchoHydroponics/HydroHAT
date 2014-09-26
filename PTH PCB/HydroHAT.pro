@@ -1,11 +1,6 @@
-update=9/19/2014 8:25:57 AM
+update=9/25/2014 7:50:27 PM
 version=1
-last_client=kicad
-[cvpcb]
-version=1
-NetIExt=net
-[cvpcb/libraries]
-EquName1=devcms
+last_client=pcbnew
 [eeschema]
 version=1
 LibDir=
@@ -45,14 +40,21 @@ LibName27=opto
 LibName28=atmel
 LibName29=contrib
 LibName30=valves
+[general]
+version=1
+[cvpcb]
+version=1
+NetIExt=net
+[cvpcb/libraries]
+EquName1=devcms
 [pcbnew]
 version=1
-LastNetListRead=
+LastNetListRead=HydroHAT.net
 UseCmpFile=1
-PadDrill=0.600000000000
-PadDrillOvalY=0.600000000000
-PadSizeH=1.500000000000
-PadSizeV=1.500000000000
+PadDrill=2.750000000000
+PadDrillOvalY=2.750000000000
+PadSizeH=6.200000000000
+PadSizeV=6.200000000000
 PcbTextSizeV=1.500000000000
 PcbTextSizeH=1.500000000000
 PcbTextThickness=0.300000000000
@@ -82,5 +84,7 @@ LibName13=led
 LibName14=dip_sockets
 LibName15=pga_sockets
 LibName16=valves
-[general]
-version=1
+LibName17=TE1825910-6
+LibName18=PIN_ARRAY_10x2
+LibName19=HAR-M701-330442
+LibName20=HAT-Hole

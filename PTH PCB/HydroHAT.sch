@@ -36,7 +36,7 @@ $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 1 1
 Title "HydroHAT Hydroponics Control Board"
-Date "25 sep 2014"
+Date "26 sep 2014"
 Rev "1"
 Comp "Rancho High School"
 Comment1 "James Rowley"
@@ -438,54 +438,6 @@ Wire Wire Line
 Wire Wire Line
 	4350 3300 4200 3300
 Wire Wire Line
-	6350 3400 7450 3400
-Wire Wire Line
-	7450 3400 7450 3200
-Wire Wire Line
-	7450 3200 7250 3200
-Wire Wire Line
-	6350 3500 7500 3500
-Wire Wire Line
-	7500 3500 7500 3100
-Wire Wire Line
-	7500 3100 7250 3100
-Wire Wire Line
-	6350 3600 7550 3600
-Wire Wire Line
-	7550 3600 7550 3000
-Wire Wire Line
-	7550 3000 7250 3000
-Wire Wire Line
-	6350 3700 7600 3700
-Wire Wire Line
-	7600 3700 7600 2900
-Wire Wire Line
-	7600 2900 7250 2900
-Wire Wire Line
-	6350 4700 7650 4700
-Wire Wire Line
-	7650 4700 7650 2800
-Wire Wire Line
-	7650 2800 7250 2800
-Wire Wire Line
-	6350 4800 7700 4800
-Wire Wire Line
-	7700 4800 7700 2700
-Wire Wire Line
-	7700 2700 7250 2700
-Wire Wire Line
-	6350 4900 7750 4900
-Wire Wire Line
-	7750 4900 7750 2600
-Wire Wire Line
-	7750 2600 7250 2600
-Wire Wire Line
-	6350 5000 7800 5000
-Wire Wire Line
-	7800 5000 7800 2500
-Wire Wire Line
-	7800 2500 7250 2500
-Wire Wire Line
 	6350 5400 6900 5400
 Wire Wire Line
 	6900 5500 6350 5500
@@ -550,8 +502,6 @@ Wire Wire Line
 Wire Wire Line
 	750  4300 850  4300
 NoConn ~ 850  4450
-NoConn ~ 850  4200
-NoConn ~ 1600 4200
 Text GLabel 1600 3850 1    60   Input ~ 0
 Vcc
 Wire Wire Line
@@ -666,10 +616,10 @@ IDSC
 Text GLabel 9300 2050 2    60   Input ~ 0
 IDSD
 $Comp
-L CONN_5 P7
+L CONN_5 P5
 U 1 1 542311A8
 P 9000 3100
-F 0 "P7" V 8950 3100 50  0000 C CNN
+F 0 "P5" V 8950 3100 50  0000 C CNN
 F 1 "CONN_5" V 9050 3100 50  0000 C CNN
 F 2 "" H 9000 3100 60  0000 C CNN
 F 3 "http://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=640456&DocType=Customer+Drawing&DocLang=English" H 9000 3100 60  0001 C CNN
@@ -698,4 +648,43 @@ NoConn ~ 9900 4800
 NoConn ~ 9900 4900
 NoConn ~ 9900 5000
 NoConn ~ 9900 5200
+Wire Wire Line
+	850  4300 850  4150
+Wire Wire Line
+	850  4150 1600 4150
+Wire Wire Line
+	1600 4150 1600 4200
+Connection ~ 850  4200
+Text GLabel 6350 4700 2    60   Input ~ 0
+AP1
+Text GLabel 7250 3200 2    60   Input ~ 0
+AP1
+Text GLabel 7250 3100 2    60   Input ~ 0
+AP2
+Text GLabel 6350 4800 2    60   Input ~ 0
+AP2
+Text GLabel 6350 4900 2    60   Input ~ 0
+AP3
+Text GLabel 6350 5000 2    60   Input ~ 0
+AP4
+Text GLabel 7250 3000 2    60   Input ~ 0
+AP3
+Text GLabel 7250 2900 2    60   Input ~ 0
+AP4
+Text GLabel 7250 2800 2    60   Input ~ 0
+AP5
+Text GLabel 7250 2700 2    60   Input ~ 0
+AP6
+Text GLabel 7250 2600 2    60   Input ~ 0
+AP7
+Text GLabel 7250 2500 2    60   Input ~ 0
+AP8
+Text GLabel 6350 3700 2    60   Input ~ 0
+AP5
+Text GLabel 6350 3600 2    60   Input ~ 0
+AP6
+Text GLabel 6350 3500 2    60   Input ~ 0
+AP7
+Text GLabel 6350 3400 2    60   Input ~ 0
+AP8
 $EndSCHEMATC

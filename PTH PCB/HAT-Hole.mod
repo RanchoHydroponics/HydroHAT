@@ -1,0 +1,23 @@
+PCBNEW-LibModule-V1  9/25/2014 7:49:20 PM
+# encoding utf-8
+Units mm
+$INDEX
+HAT-Hole
+$EndINDEX
+$MODULE HAT-Hole
+Po 0 0 0 15 5424D40F 00000000 ~~
+Li HAT-Hole
+Sc 0
+AR 
+Op 0 0 0
+T0 0 -3.9 1 1 0 0.15 N I 21 N "HAT-Hole"
+T1 0 4.1 1 1 0 0.15 N I 21 N "VAL**"
+$PAD
+Sh "" C 6.2 6.2 0 0 0
+Dr 2.75 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 0 0
+$EndPAD
+$EndMODULE HAT-Hole
+$EndLIBRARY

@@ -1,0 +1,143 @@
+Cmp-Mod V01 Created by PcbNew date = 9/25/2014 7:50:45 PM
+
+BeginCmp
+TimeStamp = /54203CE6;
+Reference = C1;
+ValeurCmp = 0.1uF;
+IdModule  = C1;
+EndCmp
+
+BeginCmp
+TimeStamp = /5420403F;
+Reference = C2;
+ValeurCmp = 0.1uF;
+IdModule  = C1;
+EndCmp
+
+BeginCmp
+TimeStamp = /5420C734;
+Reference = C3;
+ValeurCmp = 0.1uF;
+IdModule  = C1;
+EndCmp
+
+BeginCmp
+TimeStamp = /5422E16F;
+Reference = C4;
+ValeurCmp = 0.1uF;
+IdModule  = C1;
+EndCmp
+
+BeginCmp
+TimeStamp = /541D94F8;
+Reference = IC1;
+ValeurCmp = ATMEGA1284P-P;
+IdModule  = DIP-40__600;
+EndCmp
+
+BeginCmp
+TimeStamp = /5421BA70;
+Reference = IC2;
+ValeurCmp = FT232RL;
+IdModule  = SSOP28;
+EndCmp
+
+BeginCmp
+TimeStamp = /542310FC;
+Reference = IC3;
+ValeurCmp = CAT24C32;
+IdModule  = DIP-8__300;
+EndCmp
+
+BeginCmp
+TimeStamp = /5421BB71;
+Reference = J1;
+ValeurCmp = USB-B;
+IdModule  = HAR-M701-330442;
+EndCmp
+
+BeginCmp
+TimeStamp = /541D9759;
+Reference = P1;
+ValeurCmp = CONN_20X2_STACKING;
+IdModule  = PIN_ARRAY_20X2;
+EndCmp
+
+BeginCmp
+TimeStamp = /5420F12C;
+Reference = P2;
+ValeurCmp = CONN_3;
+IdModule  = PIN_ARRAY_3X1;
+EndCmp
+
+BeginCmp
+TimeStamp = /5422E631;
+Reference = P3;
+ValeurCmp = CONN_3;
+IdModule  = PIN_ARRAY_3X1;
+EndCmp
+
+BeginCmp
+TimeStamp = /5420D2CD;
+Reference = P4;
+ValeurCmp = CONN_10X2;
+IdModule  = PIN_ARRAY_10x2;
+EndCmp
+
+BeginCmp
+TimeStamp = /5420C672;
+Reference = P6;
+ValeurCmp = CONN_4;
+IdModule  = PIN_ARRAY_4x1;
+EndCmp
+
+BeginCmp
+TimeStamp = /542311A8;
+Reference = P7;
+ValeurCmp = CONN_5;
+IdModule  = PIN_ARRAY_5x1;
+EndCmp
+
+BeginCmp
+TimeStamp = /54203FAA;
+Reference = R1;
+ValeurCmp = 10K;
+IdModule  = R3;
+EndCmp
+
+BeginCmp
+TimeStamp = /5420AE48;
+Reference = RES1;
+ValeurCmp = 20MHz;
+IdModule  = SIL-3;
+EndCmp
+
+BeginCmp
+TimeStamp = /542063C2;
+Reference = SW1;
+ValeurCmp = SW_PUSH;
+IdModule  = TE1825910-6;
+EndCmp
+
+BeginCmp
+TimeStamp = /54219896;
+Reference = U1;
+ValeurCmp = SN74LVC1T45;
+IdModule  = SOT23_6;
+EndCmp
+
+BeginCmp
+TimeStamp = /5421B642;
+Reference = U2;
+ValeurCmp = SN74LVC1T45;
+IdModule  = SOT23_6;
+EndCmp
+
+BeginCmp
+TimeStamp = /5421B64C;
+Reference = U3;
+ValeurCmp = SN74LVC1T45;
+IdModule  = SOT23_6;
+EndCmp
+
+EndListe
