@@ -1,0 +1,21 @@
+Ref	Value	Manufacturer	Manufacturer P/N	Distributor P/N	Distributor Link
+C1	0.1uF	AVX Corporation	SR295E104MAR	478-5741-ND	http://www.digikey.com/short/77v1wd
+C2	0.1uF	AVX Corporation	SR295E104MAR	478-5741-ND	http://www.digikey.com/short/77v1wd
+C3	0.1uF	AVX Corporation	SR295E104MAR	478-5741-ND	http://www.digikey.com/short/77v1wd
+C4	0.1uF	AVX Corporation	SR295E104MAR	478-5741-ND	http://www.digikey.com/short/77v1wd
+IC1	ATMEGA1284P-P	Atmel	ATMEGA1284P-PU	ATMEGA1284P-PU-ND	http://www.digikey.com/short/77d19w
+IC2	FT232RL	FTDI, Future Technology Devices International Ltd	FT232RL-REEL	768-1007-1-ND	http://www.digikey.com/short/7t7wj0
+IC3	CAT24C32	ON Semiconductor	CAT24C32LI-G	CAT24C32LI-G-ND	http://www.digikey.com/short/7tj8v2
+J1	USB-B	Harwin Inc	M701-330442	952-1767-ND	http://www.digikey.com/short/7t3f2f
+P1	CONN_20X2_STACKING	Harwin Inc	M20-6102045	952-2219-ND	http://www.digikey.com/short/7tptq0
+P2	CONN_3	TE Connectivity	640456-3	A19470-ND	http://www.digikey.com/short/7t32b0
+P3	CONN_3	TE Connectivity	640456-3	A19470-ND	http://www.digikey.com/short/7t32b0
+P4	CONN_10X2	FCI	67996-420HLF	609-3221-ND	http://www.digikey.com/short/7tjj84
+P5	CONN_5	TE Connectivity	640456-5	A19471-ND	http://www.digikey.com/short/7tj8wn
+P6	CONN_4	TE Connectivity	640456-4	A1922-ND	http://www.digikey.com/short/7t32pm
+R1	10K	Stackpole Electronics Inc	CF14JT10K0	CF14JT10K0CT-ND	http://www.digikey.com/short/771c4h
+RES1	20MHz	Murata Electronics North America	CSTLS20M0X53-B0	490-1215-ND	http://www.digikey.com/short/7tzm70
+SW1	SW_PUSH	TE Connectivity	1825910-6	450-1650-ND	http://www.digikey.com/short/771zv7
+U1	SN74LVC1T45	Texas Instruments	SN74LVC1T45DBVR	296-16843-1-ND	http://www.digikey.com/short/7t7fvf
+U2	SN74LVC1T45	Texas Instruments	SN74LVC1T45DBVR	296-16843-1-ND	http://www.digikey.com/short/7t7fvf
+U3	SN74LVC1T45	Texas Instruments	SN74LVC1T45DBVR	296-16843-1-ND	http://www.digikey.com/short/7t7fvf

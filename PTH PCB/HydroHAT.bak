@@ -616,10 +616,10 @@ IDSC
 Text GLabel 9300 2050 2    60   Input ~ 0
 IDSD
 $Comp
-L CONN_5 P7
+L CONN_5 P5
 U 1 1 542311A8
 P 9000 3100
-F 0 "P7" V 8950 3100 50  0000 C CNN
+F 0 "P5" V 8950 3100 50  0000 C CNN
 F 1 "CONN_5" V 9050 3100 50  0000 C CNN
 F 2 "" H 9000 3100 60  0000 C CNN
 F 3 "http://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=640456&DocType=Customer+Drawing&DocLang=English" H 9000 3100 60  0001 C CNN

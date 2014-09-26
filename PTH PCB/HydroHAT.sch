@@ -157,7 +157,7 @@ F 3 "http://www.murata.com/~/media/webrenewal/support/library/catalog/products/t
 F 4 "Murata Electronics North America" H 4000 3100 60  0001 C CNN "MFG Name"
 F 5 "CSTLS20M0X53-B0" H 4000 3100 60  0001 C CNN "MFG Part Num"
 F 6 "490-1215-ND" H 4000 3100 60  0001 C CNN "Distrib PN"
-F 7 "490-1215-ND" H 4000 3100 60  0001 C CNN "Distrib Link"
+F 7 "http://www.digikey.com/short/7tzm70" H 4000 3100 60  0001 C CNN "Distrib Link"
 	1    4000 3100
 	1    0    0    -1  
 $EndComp

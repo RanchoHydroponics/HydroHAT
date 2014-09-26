@@ -66,7 +66,7 @@
     (aux_axis_origin 0 0)
     (visible_elements 7FFFFFFF)
     (pcbplotparams
-      (layerselection 271613953)
+      (layerselection 13369344)
       (usegerberextensions false)
       (excludeedgelayer true)
       (linewidth 0.150000)
@@ -86,7 +86,7 @@
       (plotinvisibletext false)
       (padsonsilk false)
       (subtractmaskfromsilk false)
-      (outputformat 5)
+      (outputformat 1)
       (mirror false)
       (drillshape 0)
       (scaleselection 1)
