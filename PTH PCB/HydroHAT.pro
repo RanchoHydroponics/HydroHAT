@@ -1,6 +1,6 @@
-update=9/25/2014 7:50:27 PM
+update=10/10/2014 6:24:06 PM
 version=1
-last_client=pcbnew
+last_client=kicad
 [eeschema]
 version=1
 LibDir=
@@ -40,8 +40,6 @@ LibName27=opto
 LibName28=atmel
 LibName29=contrib
 LibName30=valves
-[general]
-version=1
 [cvpcb]
 version=1
 NetIExt=net
@@ -88,3 +86,5 @@ LibName17=TE1825910-6
 LibName18=PIN_ARRAY_10x2
 LibName19=HAR-M701-330442
 LibName20=HAT-Hole
+[general]
+version=1
